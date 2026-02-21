@@ -1,6 +1,9 @@
-// Dummy file to fix TS18003 build error on Vercel
+
+// Dummy file to fix TS18003 and TS6133 build errors on Vercel
 import React from 'react';
 
-const Dummy = () => <div>Hello from Abiud - Build works!</div>;
+const Dummy: React.FC = () => {
+  return <div>Hello from Abiud - This satisfies TS checks</div>;
+};
 
 export default Dummy;
